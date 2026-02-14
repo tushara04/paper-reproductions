@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+bm_friedrich_2024/bmf24env/
+bm_friedrich_2024/diatom-branching-morphogenesis-v1.0/
+
