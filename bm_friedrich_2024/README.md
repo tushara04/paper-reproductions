@@ -120,16 +120,16 @@ All the outputs are saved in the results/ directory
 **Results**: 
 
 <p align= "center">
-  <img src="./results/image_36_with_noise.png" width="350px">
-  <img src="./results/image_36_without_noise.png" width="350px">
+  <img src="./results/image_36_with_noise.png" width="400px", style="margin-right:10px;">
+  <img src="./results/image_36_without_noise.png" width="400px">
 </div>
 
 <p align= "center">
-  <img src="./results/image_36_pruned.png" width="350px">
+  <img src="./results/image_36_pruned.png" width="400px">
 </div>
 
 <p align = "center">
-  <b>Figure 1</b>: (Top left) Image 36 with noise. (Top right) Image 36 without noise. (Bottom) Image 36 with pruned short branches and removed small cycles.
+  <b>Figure 1</b>: (Left) Image 36 with noise. (Center) Image 36 without noise. (Right) Image 36 with pruned short branches and removed small cycles.
 </p>
 
 ## Notes on Reproducibility
