@@ -8,16 +8,6 @@ This repository is my implementation of the work of **I. Babenko, N. Kröger, & 
 
 ### Reproducing What?
 
-## Repository Structure
-```
-bm_friedrich_2024/
-├── src/
-├── data/
-├── results/
-├── notebooks/
-└── README.md
-```
-
 ## Setup 
 
 ### Requirements
