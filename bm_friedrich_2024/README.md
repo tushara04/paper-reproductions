@@ -9,11 +9,26 @@ This repository is my implementation of the work of **I. Babenko, N. Kröger, & 
 ### Reproducing What?
 
 ## Setup 
+Note that the commands that follow are run on Arch Linux but they can similarly be ran on other OSes. 
 
 ### Requirements
-To start, first set up a virtual environment in a project directory. Note that the commands that follow are run on Arch Linux but they can similarly be ran on other OSes.
+To start, first set up a virtual environment in a project directory specific to the versions used in the paper:
 
+Start with installing pyenv to maintain versions of python:
+`sudo pacman -S pyenv`
+
+Then in the ~/.bashrc file, add the following commands to initialize pyenv:
 ```
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
+```
+
+Restart the terminal and then in the project directory, run:
+```
+pyenv install 3.7.4
+pyenv local 3.7.4
 python -m venv env 
 . env/bin/activate
 ```
@@ -22,7 +37,7 @@ To install requirements:
 ```
 pip install -r requirements.txt
 ```
-(to create the requirements.txt, I used the pipreqs package inside the dataset directory to scan the python and jupyter files and extract the requirements `pipreqs ./`)
+(I manually created the requirements.txt file with the primary packages as provided in the README.txt file and subsequently added the packages whose absence broke the scripts.)
 
 ### Downloading the Dataset
 Inside the project directory, run: 
