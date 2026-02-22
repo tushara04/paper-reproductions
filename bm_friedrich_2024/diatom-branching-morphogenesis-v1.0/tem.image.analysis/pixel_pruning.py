@@ -1,6 +1,5 @@
 import mahotas as mh
 from mahotas import polygon
-import pymorph as pm
 import numpy as np
 
 def endPoints(skel):

@@ -35,7 +35,7 @@ def skeletonize_TEM_GS(img,mf,dsf):
     path_ske1 = morphology.remove_small_objects(label_pxl,min_size=600)
     path_ske1 = (path_ske1>0)
     
-    return(path_ske1)
+    return(path_ske, path_ske1)
 
 ###############################################################################################################################
 from skimage.morphology import convex_hull_image,binary_closing
