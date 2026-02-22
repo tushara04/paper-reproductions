@@ -26,6 +26,7 @@ for automatic install. Or, manually download the zip file and move to the direct
 --
 ### Navigating the Dataset
 
+```
 **Folder Hierarchy**:
 ├── aberrants
 │   ├── laplacians.py
@@ -65,7 +66,7 @@ for automatic install. Or, manually download the zip file and move to the direct
     │   └── get_valve_morphology.cpython-37.pyc
     ├── seed.png
     └── simulations.ipynb
-
+```
 
 
 ___
