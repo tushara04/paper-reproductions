@@ -129,7 +129,7 @@ All the outputs are saved in the results/ directory
 </div>
 
 <p align = "center">
-  <b>Figure 1</b>: (Left) Image 36 with noise. (Center) Image 36 without noise. (Right) Image 36 with pruned short branches, removed small cycles.
+  <b>Figure 1</b>: Image 36. (Left) with noise; (Center) without noise; (Right) with pruned short branches, removed small cycles.
 </p>
 
 ## Notes on Reproducibility
