@@ -22,8 +22,9 @@ To install requirements:
 ```
 pip install -r requirements.txt
 ```
+(to create the requirements.txt, I used the pipreqs package inside the dataset directory to scan the python and jupyter files and extract the requirements `pipreqs ./`)
 
-### Downloading dataset
+### Downloading the Dataset
 Inside the project directory, run: 
 ```
 wget https://zenodo.org/records/8095546/files/diatom-branching-morphogenesis-v1.0.zip
