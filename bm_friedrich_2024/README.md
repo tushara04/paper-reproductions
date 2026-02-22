@@ -12,9 +12,7 @@ This repository is my implementation of the work of **I. Babenko, N. Kröger, & 
 Note that the commands that follow are run on Arch Linux but they can similarly be ran on other OSes. 
 
 ### Requirements
-To start, first set up a virtual environment in a project directory specific to the versions used in the paper:
-
-Start with installing pyenv to maintain versions of python:
+Start with installing pyenv to maintain versions of python. Ignore if it already exists.
 `sudo pacman -S pyenv`
 
 Then in the ~/.bashrc file, add the following commands to initialize pyenv:
@@ -25,7 +23,8 @@ eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
 ```
 
-Restart the terminal and then in the project directory, run:
+Restart the terminal, and then in the project directory create a virtual environment with version specific to what is mentioned in the README.txt file of the dataset:
+
 ```
 pyenv install 3.7.4
 pyenv local 3.7.4
