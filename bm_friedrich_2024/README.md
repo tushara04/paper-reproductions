@@ -120,7 +120,7 @@ All the outputs are saved in the results/ directory
 **Results**: 
 
 <div style="text-align: center;">
-  <img src="./results/image_36_with_noise.png" width="350px" style="margin-right:10px;">
+  <img src="./results/image_36_with_noise.png" width="350px">
   <img src="./results/image_36_without_noise.png" width="350px">
   <img src="./results/image_36_pruned.png" width="350px">
 </div>
