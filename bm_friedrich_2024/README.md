@@ -119,17 +119,17 @@ All the outputs are saved in the results/ directory
 
 **Results**: 
 
-<div style="text-align: center;">
+<p align= "center">
   <img src="./results/image_36_with_noise.png" width="350px">
   <img src="./results/image_36_without_noise.png" width="350px">
 </div>
 
-<div style="text-align: center;">
+<p align= "center">
   <img src="./results/image_36_pruned.png" width="350px">
 </div>
 
-<p style="text-align: center;">
-  Figure 1: (Top left) Image 36 with noise. (Top right) Image 36 without noise. (Bottom) Image 36 with pruned short branches and removed small cycles.
+<p align = "center">
+  <b>Figure 1</b>: (Top left) Image 36 with noise. (Top right) Image 36 without noise. (Bottom) Image 36 with pruned short branches and removed small cycles.
 </p>
 
 ## Notes on Reproducibility
