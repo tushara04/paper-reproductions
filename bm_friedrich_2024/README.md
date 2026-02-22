@@ -43,9 +43,9 @@ for automatic install. Or, manually download the zip file and move to the direct
 
 ### Navigating the Dataset
 structured in order of files ran:
-```
-Folder Hierarchy:
 
+Folder Hierarchy:
+```
 diatom-branching-morphogenesis-v1.0
 ├── tem.image.analysis
 │   ├── adaptive_thresholding.ipynb
