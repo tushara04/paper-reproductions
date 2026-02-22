@@ -32,7 +32,7 @@ unzip diatom-branching-morphogenesis-v1.0.zip
 for automatic install. Or, manually download the zip file and move to the directory.
 
 ### Navigating the Dataset
-structured in order of files ran:
+(structured in order of files ran)
 
 Folder Hierarchy:
 ```
@@ -78,7 +78,7 @@ diatom-branching-morphogenesis-v1.0
 ```
 
 ## Reproducing the Results
-All the outputs are saved in the results/ directory
+All the outputs are saved in the ./results/ directory
 
 <run a specific specifc and paste the key results and explain briefly. if any difference, i will mention that.
 
