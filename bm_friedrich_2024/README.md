@@ -189,41 +189,71 @@ https://github.com/user-attachments/assets/5f6ded86-1d4c-4103-9f48-2b8af5ef6220
 </p>
 
 
-- I also ran the simulation for different shapes of initial seeds keeping the thickness constant at 3 px:
-	- Square with sharp corners
+- I also ran the simulation for different shapes of initial seeds keeping the thickness constant at 10 px (thickness as small as 3 px leads to the simulation to miss several pixels, for instance a square returns with only two sides:
+	- Square 
 	
-	<p align= "center">
-	  <img src="./results/shape_square_seed_output.png" width="500px">
+	<p align="center">
+	  <img src="./results/square_seed_output.png" width="500px">
 	</p>
-	<p align" "center">
-	<img src="./results/shape_square_seed_output_2.png" width="500px">
+	<p align="center">
+	<img src="./results/square_seed_output_2.png" width="500px">
 	</p>
 
 	<p align = "center">
-	  <b>Figure 2</b>: (Top) 5000th time step stage of a simulated rib pattern for a digitally-drawn perfect square as an initial seed. (Bottom) 2nd run of the same code. As interesting observation in the difference in the formation of rib patterns for the same initial seed and parameters.
+	  <b>Figure 3</b>: (Top) 5000th time step stage of a simulated rib pattern for a digitally-drawn perfect square as an initial seed. (Bottom) 2nd run of the same code. An interesting observation is made in the difference in the formation of rib patterns for the same initial seed and parameters.
+	</p>
+	
+	- Triangle 
+	<p align="center">
+	  <img src="./results/triangle_seed_output.png" width="500px">
+	</p>
+	<p align = "center">
+	  <b>Figure 5</b>: Simulated rib pattern for a digitally-drawn triangle as an initial seed.
 	</p>
 
+	- Circle
+	<p align="center">
+	  <img src="./results/circle_seed_output.png" width="500px">
+	</p>
+	<p align = "center">
+	  <b>Figure 6</b>: Simulated rib pattern for a digitally-drawn circle as an initial seed.
+	</p>
 	
-	- Square with smoother corners
-	- Triangle with sharp corners
-	- Triangle with smoother corners
-	- Perfect circle
-	- Ellipse
-	- Freehand digitally drawn rough and distorted annulus
-	- Freehand digitally drawn irregular shape
+	- 18-gon (to check if sharp corners being close affects rib pattern formation)
+	<p align="center">
+	  <img src="./results/18-gon_seed_output.png" width="500px">
+	</p>
+	<p align = "center">
+	  <b>Figure 7</b>: Simulated rib pattern for a digitally-drawn 18-gon as an initial seed. It is rendered to give nearly the same result as that of a circle.
+	</p>
 
-
-
----> Changed the seed by drawing out a random closed shape.
----> Changed the values of the parameters to study the differences in the output.
 
 3. `./growing.SDV.domain/`
 	
-**Purpose**:
+**Purpose**: corresponds to Figure S10. Simulates the rib patterns in unbounded and expanding domain, with and without inhibitor degradation.
 
-**Changes made**:
+**Changes made**: No changes made.
 
-**Results**:
+**Results**: 
+
+
+<p align= "center">
+  <img src="./results/unbounded_k0.png" width="300px"> &nbsp;&nbsp;&nbsp;
+  <img src="./results/expanding_k0.png" width="300px">
+</p>
+
+<p align= "center">
+  <img src="./results/unbounded_k03.png" width="300px"> &nbsp;&nbsp;&nbsp;
+  <img src="./results/expanding_k03.png" width="300px">
+</p>
+
+<p align = "center">
+  <b>Figure 8</b>: (Top left) unbounded and without inhibitor degradation (ki=0); (Top right) expanding and without inhibitor degradation (ki=0); (Bottom left) unbounded and with inhibitor (ki=0.0003); (Bottom right) expanding and with inhibitor degradation (ki=0.0003)
+</p>
+
+
+
+
 
 ## Notes on Reproducibility
 
