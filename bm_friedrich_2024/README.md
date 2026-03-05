@@ -317,14 +317,8 @@ https://github.com/user-attachments/assets/5f6ded86-1d4c-4103-9f48-2b8af5ef6220
 <p align = "center">
   <b>Figure 15</b>: Simulated rib patterns in aberrant nascent <i>T. pseudonana</i> </p>
 
-
-## Notes on Reproducibility
-
 ## Conclusion
-Reflection on:
-- what i learned
-- what worked
-- what remains if anything
+The provided code runs successfully with minimal modifications, most of which had to do with dependency issues. Setting up the python environment with proper package versions was crucial for avoiding errors. While the code does not reproduce all results from the paper and the supplementary material, it was sufficient to verify the core algorithm and simulation behavior and helped understand the paper better. Some additional experiments with modified initial conditions were also performed and are documented in the repository.
 
 ## Citation
 **Paper**: I. Babenko, N. Kröger, & B.M. Friedrich, Mechanism of branching morphogenesis inspired by diatom silica formation, Proc. Natl. Acad. Sci. U.S.A. 121 (10) e2309518121, https://doi.org/10.1073/pnas.2309518121 (2024).
