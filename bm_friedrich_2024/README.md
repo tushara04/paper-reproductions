@@ -123,11 +123,11 @@ All the reproduced results are saved in the results/ directory and the final cod
 <p align= "center">
   <img src="./results/image_36_with_noise.png" width="400px"> &nbsp;&nbsp;&nbsp;
   <img src="./results/image_36_without_noise.png" width="400px">
-</div>
+</p>
 
 <p align= "center">
   <img src="./results/image_36_pruned.png" width="400px">
-</div>
+</p>
 
 <p align = "center">
   <b>Figure 1</b>: Image 36. (Top Left) with noise; (Top right) without noise; (Bottom) with pruned short branches, removed small cycles.
@@ -175,14 +175,35 @@ Ultimately, no significant change in the existing code was needed to be made aft
 https://github.com/user-attachments/assets/5f6ded86-1d4c-4103-9f48-2b8af5ef6220
 
 <p align = "center">
-  <b>Figure 1</b>: Simulation of pattern formation.
+  <b>Movie 1</b>: Simulation of pattern formation.
+</p>
+
+- Running the same seed for 10000 time steps gave: 
+
+<p align= "center">
+  <img src="./results/S3_skeleton_dilated_outputs.png" width="500px">
+</p>
+
+<p align = "center">
+  <b>Figure 2</b>: (Left) 10000th time step stage of a simulated rib pattern for a digitally-drawn distorted annulus as an initial seed. (Right) skeleton dilated image of the left image.
 </p>
 
 
-- Running the same seed for 10000 time steps gave: 
-  
 - I also ran the simulation for different shapes of initial seeds keeping the thickness constant at 3 px:
 	- Square with sharp corners
+	
+	<p align= "center">
+	  <img src="./results/shape_square_seed_output.png" width="500px">
+	</p>
+	<p align" "center">
+	<img src="./results/shape_square_seed_output_2.png" width="500px">
+	</p>
+
+	<p align = "center">
+	  <b>Figure 2</b>: (Top) 5000th time step stage of a simulated rib pattern for a digitally-drawn perfect square as an initial seed. (Bottom) 2nd run of the same code. As interesting observation in the difference in the formation of rib patterns for the same initial seed and parameters.
+	</p>
+
+	
 	- Square with smoother corners
 	- Triangle with sharp corners
 	- Triangle with smoother corners
