@@ -232,11 +232,9 @@ https://github.com/user-attachments/assets/5f6ded86-1d4c-4103-9f48-2b8af5ef6220
 	
 **Purpose**: corresponds to Figure S10. Simulates the rib patterns in unbounded and expanding domain, with and without inhibitor degradation.
 
-**Changes made**: No changes made.
+**Changes made**: None
 
 **Results**: 
-
-
 <p align= "center">
   <img src="./results/unbounded_k0.png" width="300px"> &nbsp;&nbsp;&nbsp;
   <img src="./results/expanding_k0.png" width="300px">
@@ -249,6 +247,27 @@ https://github.com/user-attachments/assets/5f6ded86-1d4c-4103-9f48-2b8af5ef6220
 
 <p align = "center">
   <b>Figure 8</b>: (Top left) unbounded and without inhibitor degradation (ki=0); (Top right) expanding and without inhibitor degradation (ki=0); (Bottom left) unbounded and with inhibitor (ki=0.0003); (Bottom right) expanding and with inhibitor degradation (ki=0.0003)
+</p>
+
+4. `./a.sibiricum.model/`
+
+**Purpose**: corresponds to Figure 4(B; left) and Figure S12.
+
+**Changes made**: None.
+
+**Results**: 
+
+<p align= "center">
+  <img src="./results/PSS_config.png" width="300px"> </p>
+
+<p align = "center">
+  <b>Figure 9</b>: PSS configuration used for the simuation of <i>A. sibiricum.</i></p>
+
+<p align= "center">
+  <img src="./results/a_sibiricum.png" width="300px"> </p>
+
+<p align = "center">
+  <b>Figure 10</b>: Rib patterns in diatom<i> A. sibiricum.</i>
 </p>
 
 
