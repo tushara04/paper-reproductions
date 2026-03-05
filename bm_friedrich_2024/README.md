@@ -2,12 +2,6 @@
 
 This repository is my implementation of the work of **I. Babenko, N. Kröger, & B.M. Friedrich, 2024**.
 
-## Introduction
-
-### Paper Summary
-
-### Reproducing What?
-
 ## Setup 
 Note that the commands that follow are run on my Arch Linux system but they can similarly be ran on other OSes. I have included steps specific to my system's requirements or for errors I personally ran into.
 
@@ -251,7 +245,7 @@ https://github.com/user-attachments/assets/5f6ded86-1d4c-4103-9f48-2b8af5ef6220
 
 4. `./a.sibiricum.model/`
 
-**Purpose**: corresponds to Figure 4(B; left) and Figure S12.
+**Purpose**: corresponds to Fig. 4B (left) and Figure S12.
 
 **Changes made**: None.
 
@@ -271,7 +265,48 @@ https://github.com/user-attachments/assets/5f6ded86-1d4c-4103-9f48-2b8af5ef6220
 </p>
 
 
+5. `./c.cryptica/`
 
+**Purpose**: corresponds to Fig. 4C. The result, Figure 11, below does not match with any result in the paper or the supplementary material but is suggested to be a PSS for centric diatom *C. cryptica*.
+
+**Changes made**: replaced 'tqdm_notebook' to 'tqdm'; no other changes made.
+
+**Results**: 
+<p align= "center">
+  <img src="./results/cryptica_UV_IC.png" width="400px"> </p>
+<p align = "center">
+  <b>Figure 11</b>: Visualization of U-V IC for centric diatom <i>C. cryptica</i>.
+</p>
+
+<p align= "center">
+  <img src="./results/thick.png" width="300px"> &nbsp;&nbsp;&nbsp;
+  <img src="./results/combined_thick_thin.png" width="300px">
+</p>
+<p align = "center">
+  <b>Figure 12</b>: Simulated rib patterns in diatom C. cryptica </p>
+
+6. `./aberrants/`
+
+**Purpose**: corresponds to Fig. 4A. The result, Figure 13, below is suggested to represent the two PSSs for an aberrant nascent *T. pseudonana*.
+
+**Changes made**: 
+- `t.pseudonana.simulations.abberants.ipynb`:
+	- seaborn library caused conflicts with the other versions of the library, but since it was not being used, I commented it out.
+	- the file as required in `plt.style.use('~/jupyter-notebook/trial.mplstyle')` was not found, so I commented it out.
+	- added `from tqdm import tqdm` and 'tqdm' in the loop.
+
+**Results**: 
+<p align= "center">
+  <img src="./results/abberant_UV_IC.png" width="400px"> </p>
+<p align = "center">
+  <b>Figure 11</b>: Visualization of U-V IC for aberrant nascent <i>T. pseudonana</i>.
+</p>
+
+<p align= "center">
+  <img src="./results/abberant.png" width="300px">
+</p>
+<p align = "center">
+  <b>Figure 12</b>: Simulated rib patterns in aberrant nascent <i>T. pseudonana</i> </p>
 
 
 ## Notes on Reproducibility
