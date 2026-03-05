@@ -261,13 +261,13 @@ https://github.com/user-attachments/assets/5f6ded86-1d4c-4103-9f48-2b8af5ef6220
 **Results**: 
 
 <p align= "center">
-  <img src="./results/PSS_config.png" width="300px"> </p>
+  <img src="./results/PSS_config.png" width="400px"> </p>
 
 <p align = "center">
   <b>Figure 10</b>: PSS configuration used for the simuation of <i>A. sibiricum.</i></p>
 
 <p align= "center">
-  <img src="./results/a_sibiricum.png" width="300px"> </p>
+  <img src="./results/a_sibiricum.png" width="400px"> </p>
 
 <p align = "center">
   <b>Figure 11</b>: Rib patterns in diatom<i> A. sibiricum.</i>
@@ -312,7 +312,7 @@ https://github.com/user-attachments/assets/5f6ded86-1d4c-4103-9f48-2b8af5ef6220
 </p>
 
 <p align= "center">
-  <img src="./results/abberant.png" width="300px">
+  <img src="./results/abberant.png" width="400px">
 </p>
 <p align = "center">
   <b>Figure 15</b>: Simulated rib patterns in aberrant nascent <i>T. pseudonana</i> </p>
