@@ -174,7 +174,7 @@ Ultimately, no significant change in the existing code was needed to be made aft
   
 <div align="center">
   <video width="600" controls>
-  	<source type="video/mp4" src="./results/S3_output_video_120fps.mp4"> 
+  	<source type="video/mp4" src="https://github.com/tushara04/paper-reproductions/blob/main/bm_friedrich_2024/results/S3_output_video_120fps.mp4"> 
   </video>
 </div>
 
