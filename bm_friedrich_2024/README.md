@@ -173,7 +173,8 @@ Ultimately, no significant change in the existing code was needed to be made aft
 - For the given initial seed, and running the simulation for 5000 time steps gave the following result. 
   
 <p align="center">
-  <video src="./results/S3_output_video_120fps.mp4" width="600" controls></video>
+  <video width="600" controls>
+  <source  src="./results/S3_output_video_120fps.mp4" type="video/mp4"> </video>
 </p>
 
 <p align="center">
