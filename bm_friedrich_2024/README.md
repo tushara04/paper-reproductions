@@ -172,15 +172,7 @@ Ultimately, no significant change in the existing code was needed to be made aft
 **Results**:
 - For the given initial seed, and running the simulation for 5000 time steps gave the following result. 
   
-<div align="center">
-  <video width="600" controls>
-  	<source type="video/mp4" src="https://github.com/tushara04/paper-reproductions/blob/main/bm_friedrich_2024/results/S3_output_video_120fps.mp4"> 
-  </video>
-</div>
-
-<p align="center">
 https://github.com/user-attachments/assets/5f6ded86-1d4c-4103-9f48-2b8af5ef6220
-</p>
 
 <p align = "center">
   <b>Figure 1</b>: Simulation of pattern formation.
