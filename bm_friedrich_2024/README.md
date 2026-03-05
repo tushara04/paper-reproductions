@@ -172,6 +172,15 @@ Ultimately, no significant change in the existing code was needed to be made aft
 **Results**:
 - For the given initial seed, and running the simulation for 5000 time steps gave the following result. 
 
+<p align= "center">
+  <a href="./results/S3_output_video_120fps.mp4">simulation video</a>
+</p>
+
+<p align = "center">
+  <b>Figure 1</b>: Simulation of pattern formation.
+</p>
+
+
 - Running the same seed for 10000 time steps gave: 
   
 - I also ran the simulation for different shapes of initial seeds keeping the thickness constant at 3 px:
@@ -188,6 +197,14 @@ Ultimately, no significant change in the existing code was needed to be made aft
 
 ---> Changed the seed by drawing out a random closed shape.
 ---> Changed the values of the parameters to study the differences in the output.
+
+3. `./growing.SDV.domain/`
+	
+**Purpose**:
+
+**Changes made**:
+
+**Results**:
 
 ## Notes on Reproducibility
 
