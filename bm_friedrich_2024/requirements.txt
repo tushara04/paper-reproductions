@@ -6,3 +6,5 @@ imageio==2.6.0
 scikit-image==0.15.0
 ipykernel
 mahotas=1.4.9
+ipywidgets
+tqdm

@@ -2,7 +2,7 @@ import numpy as np
 import skimage as skm
 import skimage.measure as mea
 import skimage.morphology as mrph
-from skimage.draw import circle
+from skimage.draw import circle_perimeter as circle
 
 ds0 = 0.8*0.4 # <--check it before the run! global variable
 

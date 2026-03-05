@@ -10,7 +10,7 @@ def get_initial_seed(img,v_max,dx,nX,nY):
     nS = np.shape(pic[1])[0]     # getting image shape
     seed = pic[:,:,3]-pic[:,:,2]
     seed = seed/250              # grayscale normalization 
-    seed = rescale(seed,  (98//dx)/nS, multichannel=False, anti_aliasing=True)
+    seed = rescale(seed, (98//dx)/nS, anti_aliasing=True, multichannel = False)
     
     U = np.ones((nY,nX))         # making blank U and V matrices
     V = np.zeros((nY,nX))

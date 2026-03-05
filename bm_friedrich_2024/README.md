@@ -9,7 +9,7 @@ This repository is my implementation of the work of **I. Babenko, N. Kröger, & 
 ### Reproducing What?
 
 ## Setup 
-Note that the commands that follow are run on Arch Linux but they can similarly be ran on other OSes. I have added steps specific to my system's requirements or for errors I personally ran into.
+Note that the commands that follow are run on my Arch Linux system but they can similarly be ran on other OSes. I have included steps specific to my system's requirements or for errors I personally ran into.
 
 ### Requirements
 Start with installing pyenv to maintain versions of python. Ignore if it already exists.
@@ -62,13 +62,13 @@ Folder Hierarchy:
 diatom-branching-morphogenesis-v1.0
 ├── tem.image.analysis
 │   ├── adaptive_thresholding.ipynb
+│   ├── local_thresholding.py
+│   ├── pixel_pruning.py
+│   ├── magnifications.txt
 │   ├── images
 │   │   ├── img_001_optimized.jpg
 │   │   ├── ...
 │   │   └── img_038_optimized.jpg
-│   ├── local_thresholding.py
-│   ├── magnifications.txt
-│   ├── pixel_pruning.py
 │   └── __pycache__
 │       ├── local_thresholding.cpython-37.pyc
 │       └── pixel_pruning.cpython-37.pyc
@@ -101,7 +101,7 @@ diatom-branching-morphogenesis-v1.0
 ```
 
 ## Reproducing the Results
-All the outputs are saved in the results/ directory
+All the reproduced results are saved in the results/ directory and the final codes in diatom-branching-morphogenesis-v1.0/ directory.
 
 1. `./tem.image.analysis/`
 
@@ -112,6 +112,7 @@ All the outputs are saved in the results/ directory
 	- fixed path variable to match local directory structure.
 	- added saved_skeletons directory to store the skeletons text files.
 	- added ske_exp_obj variable with ske_exp to capture path_ske for image with object impurities.
+	- `import os` was called twice; removed the redundancy.
 - `pixel_pruning.py`: 
 	- removed the import of pymorph library since it cannot be installed in Python >3.x and was not in use either.
 - `local_thresholding.py`: 
@@ -129,8 +130,64 @@ All the outputs are saved in the results/ directory
 </div>
 
 <p align = "center">
-  <b>Figure 1</b>: Image 36. (Left) with noise; (Center) without noise; (Right) with pruned short branches, removed small cycles.
+  <b>Figure 1</b>: Image 36. (Top Left) with noise; (Top right) without noise; (Bottom) with pruned short branches, removed small cycles.
 </p>
+
+2. `./t.pseudonana.model/`
+
+**Purpose**: simulates the early stage development of a rib pattern for a digitally-drawn initial seed.
+
+**Changes made**:
+- `BranchDiatom.py`:
+	- had to initially remove the `multichannel = False` from skimage.transform.rescale since it was no longer a recognized argument but later had to put it back because without it the loop over time step in the simulation failed to output desired images.
+- `simulations.ipynb`: 
+  	- 'square' in recent versions of scikit is deprecated and removed and has to be replaced with 'footprint_rectangle'; no changes made here for the version used though.
+	- 'binary_dilation' in recent versions of scikit is deprecated and removed and has to be replaced with mirror_footprint'; no change made here for the version used though.
+	- `from tqdm.notebook import tqdm` was replaced with `from tqdm import tqdm`
+- `get_valve_morphology.py`:
+	- `import circle` was replaced with `import circle_parameter`; though the file was not used in the simulation.
+	- added the following code in the time step loop to save figures and observe the growth:
+
+```
+    plt.figure()
+    ax = plt.gca()
+    ax.imshow(S3, cmap='bone_r')
+    plot_scale_bar(S3, mf, ax)
+    plt.savefig(f"./sim_images_S3//S3_pattern{i:06d}.png",
+                dpi=150, bbox_inches="tight")
+    plt.close()
+
+    
+    plt.figure()
+    ax = plt.gca()
+    ax.imshow(skeleton_dilated, cmap='bone_r')
+    plot_scale_bar(S3, mf, ax)
+    plt.savefig(f"./sim_images_skel_dilated//S3_pattern{i:06d}.png",
+                dpi=150, bbox_inches="tight")
+    plt.close()
+```
+
+Ultimately, no significant change in the existing code was needed to be made after the environment was set up with the proper packages, installation of which required navigating the files and running the codes multiple times initially and encountering errors.
+
+**Results**:
+- For the given initial seed, and running the simulation for 5000 time steps gave the following result. 
+
+- Running the same seed for 10000 time steps gave: 
+  
+- I also ran the simulation for different shapes of initial seeds keeping the thickness constant at 3 px:
+	- Square with sharp corners
+	- Square with smoother corners
+	- Triangle with sharp corners
+	- Triangle with smoother corners
+	- Perfect circle
+	- Ellipse
+	- Freehand digitally drawn rough and distorted annulus
+	- Freehand digitally drawn irregular shape
+
+
+
+---> Changed the seed by drawing out a random closed shape.
+---> Changed the values of the parameters to study the differences in the output.
 
 ## Notes on Reproducibility
 

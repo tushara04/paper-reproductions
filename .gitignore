@@ -4,4 +4,5 @@ __pycache__/
 
 bm_friedrich_2024/bmf24env/
 #bm_friedrich_2024/diatom-branching-morphogenesis-v1.0/
-
+bm_friedrich_2024/diatom-branching-morphogenesis-v1.0/t.pseudonana.model/sim_images_S3
+bm_friedrich_2024/diatom-branching-morphogenesis-v1.0/t.pseudonana.model/sim_images_skel_dilated
