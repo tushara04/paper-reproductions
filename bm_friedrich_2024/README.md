@@ -171,6 +171,11 @@ Ultimately, no significant change in the existing code was needed to be made aft
 
 **Results**:
 - For the given initial seed, and running the simulation for 5000 time steps gave the following result. 
+  
+<p align="center">
+  <video src="./results/S3_output_video_120fps.mp4" width="600" controls></video>
+</p>
+
 <p align="center">
 https://github.com/user-attachments/assets/5f6ded86-1d4c-4103-9f48-2b8af5ef6220
 </p>
