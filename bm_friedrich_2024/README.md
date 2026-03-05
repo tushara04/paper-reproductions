@@ -220,6 +220,15 @@ https://github.com/user-attachments/assets/5f6ded86-1d4c-4103-9f48-2b8af5ef6220
 	<p align = "center">
 	  <b>Figure 7</b>: Simulated rib pattern for a digitally-drawn 18-gon as an initial seed. It is rendered to give nearly the same result as that of a circle.
 	</p>
+	
+	- Two circles
+	<p align="center">
+	  <img src="./results/two_circles_seed_output.png" width="500px">
+	</p>
+	<p align = "center">
+	  <b>Figure 8</b>: Simulated rib pattern for two digitally-drawn circles as an initial seed. Clearly there are no overlaps in the patterns, which was discussed in the paper as well.
+	</p>
+
 
 
 3. `./growing.SDV.domain/`
@@ -240,7 +249,7 @@ https://github.com/user-attachments/assets/5f6ded86-1d4c-4103-9f48-2b8af5ef6220
 </p>
 
 <p align = "center">
-  <b>Figure 8</b>: (Top left) unbounded and without inhibitor degradation (ki=0); (Top right) expanding and without inhibitor degradation (ki=0); (Bottom left) unbounded and with inhibitor (ki=0.0003); (Bottom right) expanding and with inhibitor degradation (ki=0.0003)
+  <b>Figure 9</b>: (Top left) unbounded and without inhibitor degradation (ki=0); (Top right) expanding and without inhibitor degradation (ki=0); (Bottom left) unbounded and with inhibitor (ki=0.0003); (Bottom right) expanding and with inhibitor degradation (ki=0.0003)
 </p>
 
 4. `./a.sibiricum.model/`
@@ -255,19 +264,19 @@ https://github.com/user-attachments/assets/5f6ded86-1d4c-4103-9f48-2b8af5ef6220
   <img src="./results/PSS_config.png" width="300px"> </p>
 
 <p align = "center">
-  <b>Figure 9</b>: PSS configuration used for the simuation of <i>A. sibiricum.</i></p>
+  <b>Figure 10</b>: PSS configuration used for the simuation of <i>A. sibiricum.</i></p>
 
 <p align= "center">
   <img src="./results/a_sibiricum.png" width="300px"> </p>
 
 <p align = "center">
-  <b>Figure 10</b>: Rib patterns in diatom<i> A. sibiricum.</i>
+  <b>Figure 11</b>: Rib patterns in diatom<i> A. sibiricum.</i>
 </p>
 
 
 5. `./c.cryptica/`
 
-**Purpose**: corresponds to Fig. 4C. The result, Figure 11, below does not match with any result in the paper or the supplementary material but is suggested to be a PSS for centric diatom *C. cryptica*.
+**Purpose**: corresponds to Fig. 4C. The result, Figure 12, below does not match with any result in the paper or the supplementary material but is suggested to be a PSS for centric diatom *C. cryptica*.
 
 **Changes made**: replaced 'tqdm_notebook' to 'tqdm'; no other changes made.
 
@@ -275,7 +284,7 @@ https://github.com/user-attachments/assets/5f6ded86-1d4c-4103-9f48-2b8af5ef6220
 <p align= "center">
   <img src="./results/cryptica_UV_IC.png" width="400px"> </p>
 <p align = "center">
-  <b>Figure 11</b>: Visualization of U-V IC for centric diatom <i>C. cryptica</i>.
+  <b>Figure 12</b>: Visualization of U-V IC for centric diatom <i>C. cryptica</i>.
 </p>
 
 <p align= "center">
@@ -283,11 +292,11 @@ https://github.com/user-attachments/assets/5f6ded86-1d4c-4103-9f48-2b8af5ef6220
   <img src="./results/combined_thick_thin.png" width="300px">
 </p>
 <p align = "center">
-  <b>Figure 12</b>: Simulated rib patterns in diatom C. cryptica </p>
+  <b>Figure 13</b>: Simulated rib patterns in diatom C. cryptica </p>
 
 6. `./aberrants/`
 
-**Purpose**: corresponds to Fig. 4A. The result, Figure 13, below is suggested to represent the two PSSs for an aberrant nascent *T. pseudonana*.
+**Purpose**: corresponds to Fig. 4A. The result, Figure 14, below is suggested to represent the two PSSs for an aberrant nascent *T. pseudonana*.
 
 **Changes made**: 
 - `t.pseudonana.simulations.abberants.ipynb`:
@@ -299,14 +308,14 @@ https://github.com/user-attachments/assets/5f6ded86-1d4c-4103-9f48-2b8af5ef6220
 <p align= "center">
   <img src="./results/abberant_UV_IC.png" width="400px"> </p>
 <p align = "center">
-  <b>Figure 11</b>: Visualization of U-V IC for aberrant nascent <i>T. pseudonana</i>.
+  <b>Figure 14</b>: Visualization of U-V IC for aberrant nascent <i>T. pseudonana</i>.
 </p>
 
 <p align= "center">
   <img src="./results/abberant.png" width="300px">
 </p>
 <p align = "center">
-  <b>Figure 12</b>: Simulated rib patterns in aberrant nascent <i>T. pseudonana</i> </p>
+  <b>Figure 15</b>: Simulated rib patterns in aberrant nascent <i>T. pseudonana</i> </p>
 
 
 ## Notes on Reproducibility
